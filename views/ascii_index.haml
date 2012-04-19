@@ -1,0 +1,10 @@
+%html
+  %head
+    %title Input ASCII-armored PGP Key
+    %link{:rel => "stylesheet", :type => "text/css", :href => "/css/ascii.css"}
+  %body
+    #main
+      %form{:action => "/ascii", :method => "POST"}
+        %textarea{:name => "qrcode"}
+        #submit 
+          %input{:type => "submit", :value => "Show QR Code"}
