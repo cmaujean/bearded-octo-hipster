@@ -71,8 +71,7 @@ describe "POST /ascii", :type => :request do
   end
   
   it "should have a qr code" do
-    @qr = RQRCode::QRCode.new(KEY, :size => 40, :level => :m) 
-    page.all('td.black').count.should == @qr.to_s.count("x")
+    count_black_spots(KEY)
   end
 
 end
