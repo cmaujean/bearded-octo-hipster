@@ -12,3 +12,7 @@ end
 def app
   Sinatra::Application
 end
+
+def body
+  Nokogiri.parse last_response.body
+end
