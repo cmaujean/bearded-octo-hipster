@@ -21,3 +21,7 @@ def count_black_spots(key)
   @qr = RQRCode::QRCode.new(key, :size => 40, :level => :m)
   page.all('td.black').count.should == @qr.to_s.count("x")
 end
+
+def test_file
+  File.expand_path(File.dirname(__FILE__) + '/test_keys/4FF24B67.gpg')
+end
