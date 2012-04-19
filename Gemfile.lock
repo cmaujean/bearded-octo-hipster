@@ -21,6 +21,8 @@ GEM
       rack
     rack-test (0.6.1)
       rack (>= 1.0)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
     rqrcode (0.4.2)
     rspec (2.9.0)
       rspec-core (~> 2.9.0)
@@ -53,6 +55,7 @@ DEPENDENCIES
   capybara
   haml
   nokogiri
+  rest-client
   rqrcode
   rspec
   shotgun

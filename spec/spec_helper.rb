@@ -2,6 +2,7 @@ require File.expand_path(File.join(File.dirname(__FILE__), '..', 'app'))
 require 'capybara/rspec'
 require 'rack/test'
 require 'nokogiri'
+require 'rspec/expectations'
 
 Capybara.app = Sinatra::Application
 
